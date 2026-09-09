@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder visual proyek</title>
+  <desc id="desc">Visual sementara sebelum screenshot proyek tersedia</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#29292e"/>
+      <stop offset="1" stop-color="#17171a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffdb70"/>
+      <stop offset="1" stop-color="#ffad47"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="-15" r="190" fill="#ffffff" opacity=".025"/>
+  <circle cx="95" cy="385" r="155" fill="#ffca59" opacity=".035"/>
+  <rect x="66" y="63" width="508" height="274" rx="22" fill="none" stroke="#414147" stroke-width="2"/>
+  <rect x="104" y="106" width="190" height="16" rx="8" fill="url(#accent)" opacity=".9"/>
+  <rect x="104" y="145" width="375" height="10" rx="5" fill="#66666d"/>
+  <rect x="104" y="170" width="302" height="10" rx="5" fill="#55555b"/>
+  <rect x="104" y="222" width="126" height="72" rx="12" fill="#35353a"/>
+  <rect x="248" y="222" width="126" height="72" rx="12" fill="#35353a"/>
+  <rect x="392" y="222" width="126" height="72" rx="12" fill="#35353a"/>
+  <text x="320" y="370" fill="#9d9da4" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" letter-spacing="3">PROJECT PREVIEW</text>
+</svg>

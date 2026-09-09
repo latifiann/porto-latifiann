@@ -1,44 +1,50 @@
-# vCard - Personal portfolio
+# Portofolio Latifian Iman
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Situs portofolio statis Latifian Iman, Mobile Developer. Dibangun menggunakan HTML, CSS, dan JavaScript tanpa build system.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## Menjalankan secara lokal
 
-## Demo
-
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
+Jalankan static server dari direktori proyek:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+python3 -m http.server 4173
 ```
 
-Windows:
+Buka `http://127.0.0.1:4173`.
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Struktur
 
-## Contact
+- `index.html`: konten, metadata, dan template detail proyek.
+- `projects/`: halaman case study untuk proyek dengan showcase lengkap.
+- `assets/css/style.css`: tampilan responsif dan aksesibilitas visual.
+- `assets/css/project-detail.css`: layout shared untuk halaman case study.
+- `assets/js/script.js`: navigasi hash, filter proyek, modal, sidebar, dan validasi form.
+- `assets/images/`: ikon, gambar proyek, dan foto profil.
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+## Data
 
-## License
+Konten awal disusun dari `../cv-latifian/cv-latifianiman-master.md`. Hanya bagian CV final yang digunakan. Draft, catatan verifikasi, dan daftar sumber internal tidak dipublikasikan.
 
-MIT
+## Detail proyek
+
+- FMS-CREATE tersedia pada `projects/fms-create.html`.
+- ReMi Mobile tersedia pada `projects/remi-mobile.html`.
+- Semina, ReMi Web App, Mooda App, dan NKRI masih memakai modal pada `index.html`.
+- Galeri FMS-CREATE dan ReMi Mobile memakai placeholder sampai screenshot tambahan tersedia.
+- Video promosi ReMi memakai placeholder yang dapat diganti dengan Google Drive preview atau YouTube embed.
+
+## Status sementara
+
+- Tombol unduh CV menunggu PDF publik.
+- Form kontak belum terhubung ke backend. UI tidak menyatakan pesan berhasil terkirim.
+- Internasionalisasi Indonesia/Inggris belum diterapkan.
+
+## Mengganti aset
+
+Cover proyek berada di `assets/images/projects/`. Pertahankan rasio sekitar `8:5` dan tambahkan teks alternatif yang menjelaskan isi gambar.
+
+Untuk mengisi showcase, ganti elemen `.showcase-placeholder` pada halaman proyek dengan `<figure>` dan `<img>` terkait. Untuk video ReMi, ganti `.video-placeholder` dengan `<iframe>` Google Drive/YouTube atau elemen `<video>` tanpa autoplay.
+
+## Lisensi
+
+Turunan dari [vCard Personal Portfolio](https://github.com/codewithsadee/vcard-personal-portfolio) oleh codewithsadee. Lisensi MIT asli tersedia pada `LICENSE`.

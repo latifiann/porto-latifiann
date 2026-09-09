@@ -1,1201 +1,1155 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio Latifian Iman, Mobile Developer berpengalaman dalam Flutter, integrasi API, komunikasi real-time, back-end, dan software testing."
+    />
+    <meta name="author" content="Latifian Iman" />
+    <meta name="theme-color" content="#121212" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="Latifian Iman | Mobile Developer" />
+    <meta
+      property="og:description"
+      content="Portofolio proyek, pengalaman, dan kredensial Latifian Iman."
+    />
+    <meta
+      property="og:image"
+      content="./assets/images/project-placeholder.svg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Latifian Iman | Mobile Developer</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+    <link
+      rel="icon"
+      href="./assets/images/profile-placeholder.svg"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Latifian Iman",
+        "jobTitle": "Mobile Developer",
+        "email": "mailto:latifian.iman44@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Surabaya",
+          "addressCountry": "ID"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/latifian-iman-48971421b/",
+          "https://github.com/latifiann"
+        ]
+      }
+    </script>
+  </head>
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/profile/latifian-iman.webp"
+              alt="Foto profil Latifian Iman"
+              width="150"
+              height="150"
+            />
+          </figure>
 
-<body>
+          <div class="info-content">
+            <h1 class="name">Latifian Iman</h1>
+            <p class="title">Mobile Developer</p>
+          </div>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
+          <button
+            class="info_more-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="sidebar-details"
+            data-sidebar-btn
+          >
+            <span data-sidebar-label>Tampilkan Kontak</span>
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+        <div class="sidebar-info_more" id="sidebar-details">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:latifian.iman44@gmail.com" class="contact-link"
+                  >latifian.iman44@gmail.com</a
+                >
               </div>
-
             </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Domisili</p>
+                <address>Surabaya, Indonesia</address>
               </div>
-
             </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
           </ul>
 
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
+          <div class="separator"></div>
+          <ul class="social-list" aria-label="Media sosial">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/latifian-iman-48971421b/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Latifian Iman"
+              >
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+              </a>
             </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
+            <li>
+              <a
+                href="https://github.com/latifiann"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Latifian Iman"
+              >
+                <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+              </a>
             </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
           </ul>
 
-        </section>
+          <button
+            class="download-btn"
+            type="button"
+            disabled
+            title="CV PDF akan ditambahkan kemudian"
+          >
+            <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            CV segera tersedia
+          </button>
+        </div>
+      </aside>
 
+      <div class="main-content" id="main-content">
+        <nav class="navbar" aria-label="Navigasi utama">
+          <ul class="navbar-list">
+            <li>
+              <a
+                class="navbar-link active"
+                href="#tentang"
+                data-nav-link
+                data-page-target="tentang"
+                aria-current="page"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-link"
+                href="#pengalaman"
+                data-nav-link
+                data-page-target="pengalaman"
+                >Pengalaman</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-link"
+                href="#proyek"
+                data-nav-link
+                data-page-target="proyek"
+                >Proyek</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-link"
+                href="#kredensial"
+                data-nav-link
+                data-page-target="kredensial"
+                >Kredensial</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-link"
+                href="#kontak"
+                data-nav-link
+                data-page-target="kontak"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-        <!--
-          - testimonials modal
-        -->
+        <article class="about active" id="tentang" data-page="tentang">
+          <header><h2 class="h2 article-title">Tentang Saya</h2></header>
 
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
+          <section class="about-text">
+            <p>
+              Saya merupakan lulusan Sarjana Terapan (D4) Teknik Informatika
+              Politeknik Elektronika Negeri Surabaya. Pengalaman saya mencakup
+              pengembangan aplikasi mobile, web, dan back-end melalui proyek
+              akademik, proyek personal, serta dua program magang industri.
+            </p>
+            <p>
+              Saya berfokus pada pengembangan antarmuka, integrasi API,
+              komunikasi real-time, pengelolaan data, UI/UX, serta manual dan
+              automated testing. Dalam pengembangan software, saya terbiasa
+              menggunakan Git dan bekerja secara kolaboratif dengan metode
+              Agile.
+            </p>
           </section>
 
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="service" aria-labelledby="kompetensi-title">
+            <h3 class="h3 service-title" id="kompetensi-title">
+              Kompetensi Utama
+            </h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile Development</h4>
+                  <p class="service-item-text">
+                    Pengembangan aplikasi Flutter dengan Dart, Riverpod atau
+                    BLoC, sistem navigasi, local storage, dan reusable UI
+                    components.
+                  </p>
+                </div>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Komunikasi Real-Time</h4>
+                  <p class="service-item-text">
+                    Integrasi WebSocket, Socket.IO, WebRTC, dan Server-Sent
+                    Events untuk chat, panggilan, perjalanan, dan pelacakan
+                    kendaraan.
+                  </p>
+                </div>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Back-End & Web</h4>
+                  <p class="service-item-text">
+                    REST API dengan Node.js, Express.js, dan MongoDB serta
+                    front-end menggunakan HTML, CSS, JavaScript, dan React.
+                  </p>
+                </div>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-quality.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Testing & UI/UX</h4>
+                  <p class="service-item-text">
+                    Manual dan automated testing dengan Katalon Studio serta
+                    Selenium WebDriver, didukung perancangan UI/UX melalui
+                    Figma.
+                  </p>
+                </div>
               </li>
-
             </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          </section>
+
+          <section class="highlights" aria-labelledby="highlight-title">
+            <h3 class="h3" id="highlight-title">Sorotan</h3>
+            <ul class="highlight-grid">
+              <li class="highlight-card">
+                <strong>2</strong><span>Program magang industri</span>
+              </li>
+              <li class="highlight-card">
+                <strong>6</strong><span>Proyek pilihan</span>
+              </li>
+              <li class="highlight-card">
+                <strong>3</strong><span>Penghargaan tim ReMi</span>
+              </li>
+              <li class="highlight-card">
+                <strong>1</strong><span>Sertifikasi kompetensi BNSP</span>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="experience" id="pengalaman" data-page="pengalaman">
+          <header><h2 class="h2 article-title">Pengalaman</h2></header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon
+                  name="briefcase-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </div>
+              <h3 class="h3">Pengalaman Kerja</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Mobile Developer Intern · PT Piramida Teknologi Informasi
+                </h4>
+                <span>21 Juli–5 Desember 2025 · Remote, Surabaya</span>
+                <p class="timeline-label">Mooda App · Tim 4 orang</p>
+                <ul class="detail-list">
+                  <li>
+                    Mengembangkan prototipe ride-hailing berbasis Flutter dengan
+                    autentikasi, pemesanan, pembatalan, status perjalanan
+                    real-time, rating, profil, dan riwayat perjalanan.
+                  </li>
+                  <li>
+                    Mengintegrasikan REST API melalui Dio, Socket.IO, Google
+                    Maps, geolokasi, reverse geocoding, Riverpod, GoRouter, dan
+                    Hive.
+                  </li>
+                  <li>
+                    Merancang UI/UX melalui Figma dan menguji alur pelanggan
+                    serta pengemudi secara manual pada Android.
+                  </li>
+                </ul>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Mobile Developer Intern · Mitra Informatika
+                </h4>
+                <span>13 Januari–6 Juni 2025 · On-site, Surabaya</span>
+                <p class="timeline-label">
+                  <a
+                    href="https://nkr.id/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >NKRI</a
+                  >
+                  · Tim 6 orang
+                </p>
+                <ul class="detail-list">
+                  <li>
+                    Mengembangkan modul komunikasi real-time Flutter menggunakan
+                    Riverpod, Isar, Dio, AutoRoute, dan reusable UI components.
+                  </li>
+                  <li>
+                    Berkontribusi pada migrasi Socket.IO ke WebSocket, reconnect
+                    handling, status pengguna, serta prototipe panggilan suara
+                    dan video berbasis WebRTC.
+                  </li>
+                  <li>
+                    Mengembangkan pencarian pesan, filter, pagination chat room,
+                    serta fitur attachment dan alur grup.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <h3 class="h3">Pengalaman Proyek</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Mobile Developer · AgileTeknik Network
+                </h4>
+                <span>2024</span>
+                <p class="timeline-label">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.agileteknik.remi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >ReMi · Remind Me</a
+                  >
+                  · Product Based Learning · Tim 8 orang
+                </p>
+                <ul class="detail-list">
+                  <li>
+                    Berkolaborasi dalam pengembangan dan publikasi ReMi di
+                    Google Play melalui workflow Agile dengan feature branch,
+                    pull request, dan iterasi bug fixing.
+                  </li>
+                  <li>
+                    Mengembangkan fitur task berbasis BLoC, menyempurnakan
+                    Flutter UI, serta mengintegrasikan REST API melalui Dio
+                    dalam Clean Architecture berbasis fitur.
+                  </li>
+                  <li>
+                    Terlibat dalam Design Sprint, perancangan UI melalui Figma,
+                    manual testing, serta pengembangan gamifikasi berupa koin
+                    yang dapat digunakan untuk membeli tema aplikasi.
+                  </li>
+                  <li>
+                    Bersama tim ReMi meraih Top 1 Best Mobile, Top 3 Best UX,
+                    dan Juara 3 Best Team pada AT Fest End Year 2024.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="school-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <h3 class="h3">Pendidikan</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Politeknik Elektronika Negeri Surabaya
+                </h4>
+                <span>2021–2026 · Lulus 24 Juli 2026</span>
+                <p class="timeline-text">
+                  Sarjana Terapan (D4) Teknik Informatika · IPK 3,51/4,00
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <h3 class="h3">Organisasi & Kepemimpinan</h3>
+            </div>
+            <ol class="timeline-list compact-timeline">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Staf Departemen Luar Negeri · BPH HIMIT PENS
+                </h4>
+                <span>2022–2023</span>
+                <p class="timeline-text">
+                  Menjalin komunikasi eksternal dan menjadi koordinator Divisi
+                  PDD Sharing Session HIMIT × DANA.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Ketua Panitia · SPIRIT</h4>
+                <span>2023</span>
+                <p class="timeline-text">
+                  Memimpin perencanaan dan pelaksanaan Social Project in
+                  Ramadhan with IT.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Instructor Committee · OPP Dynamic HIMIT PENS
+                </h4>
+                <span>2022</span>
+                <p class="timeline-text">
+                  Membimbing mahasiswa baru Teknik Informatika dan Data Science.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Instructor Committee · PKKMB PENS
+                </h4>
+                <span>2022</span>
+                <p class="timeline-text">
+                  Membimbing mahasiswa baru dari seluruh program studi selama
+                  tiga hari.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <article class="portfolio" id="proyek" data-page="proyek">
+          <header><h2 class="h2 article-title">Proyek Pilihan</h2></header>
+
+          <section class="projects">
+            <div class="filter-list" role="group" aria-label="Filter proyek">
+              <button
+                class="active"
+                type="button"
+                data-filter-btn="semua"
+                aria-pressed="true"
+              >
+                Semua
+              </button>
+              <button
+                type="button"
+                data-filter-btn="mobile"
+                aria-pressed="false"
+              >
+                Mobile
+              </button>
+              <button type="button" data-filter-btn="web" aria-pressed="false">
+                Web
+              </button>
+              <button
+                type="button"
+                data-filter-btn="back-end"
+                aria-pressed="false"
+              >
+                Back-End
+              </button>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <label class="filter-select-label" for="project-filter"
+              >Filter proyek</label
+            >
+            <select
+              class="filter-select"
+              id="project-filter"
+              data-filter-select
+            >
+              <option value="semua">Semua</option>
+              <option value="mobile">Mobile</option>
+              <option value="web">Web</option>
+              <option value="back-end">Back-End</option>
+            </select>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile"
+              >
+                <a class="project-card" href="./projects/fms-create.html">
+                  <figure class="project-img" data-image-mode="transparent">
+                    <img
+                      src="./assets/images/projects/fms-create.webp"
+                      alt="Tampilan aplikasi dan dashboard FMS-CREATE"
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    /><span class="project-item-icon-box"
+                      ><ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon
+                    ></span>
+                  </figure>
+                  <h3 class="project-title">FMS-CREATE</h3>
+                  <p class="project-category">Mobile · Tugas Akhir</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile"
+              >
+                <a class="project-card" href="./projects/remi-mobile.html">
+                  <figure class="project-img" data-image-mode="transparent">
+                    <img
+                      src="./assets/images/projects/remi-mobile.webp"
+                      alt="Tampilan aplikasi mobile ReMi pada perangkat seluler dan laptop"
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    /><span class="project-item-icon-box"
+                      ><ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon
+                    ></span>
+                  </figure>
+                  <h3 class="project-title">ReMi · Remind Me</h3>
+                  <p class="project-category">Mobile · Proyek Tim</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="back-end"
+              >
+                <button
+                  class="project-card"
+                  type="button"
+                  data-project-open="semina"
+                >
+                  <figure class="project-img" data-image-mode="full">
+                    <img
+                      src="./assets/images/projects/semina.webp"
+                      alt="Tampilan halaman utama platform event Semina"
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    /><span class="project-item-icon-box"
+                      ><ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                      ></ion-icon
+                    ></span>
+                  </figure>
+                  <h3 class="project-title">Semina</h3>
+                  <p class="project-category">Back-End · Proyek Pembelajaran</p>
+                </button>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web"
+              >
+                <button
+                  class="project-card"
+                  type="button"
+                  data-project-open="remi-web"
+                >
+                  <figure class="project-img" data-image-mode="full">
+                    <img
+                      src="./assets/images/projects/remi-website.webp"
+                      alt="Tampilan halaman utama ReMi Web App"
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    /><span class="project-item-icon-box"
+                      ><ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                      ></ion-icon
+                    ></span>
+                  </figure>
+                  <h3 class="project-title">ReMi Web App</h3>
+                  <p class="project-category">Web · Proyek Tim</p>
+                </button>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile"
+              >
+                <button
+                  class="project-card"
+                  type="button"
+                  data-project-open="mooda"
+                >
+                  <figure class="project-img" data-image-mode="transparent">
+                    <img
+                      src="./assets/images/projects/mooda.webp"
+                      alt="Tampilan aplikasi Mooda untuk peta, pemuatan, dan pemesanan perjalanan"
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    /><span class="project-item-icon-box"
+                      ><ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                      ></ion-icon
+                    ></span>
+                  </figure>
+                  <h3 class="project-title">Mooda App</h3>
+                  <p class="project-category">Mobile · Proyek Magang</p>
+                </button>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile"
+              >
+                <button
+                  class="project-card"
+                  type="button"
+                  data-project-open="nkri"
+                >
+                  <figure class="project-img" data-image-mode="transparent">
+                    <img
+                      src="./assets/images/projects/nkri.webp"
+                      alt="Tampilan fitur chat, autentikasi, dan daftar percakapan aplikasi NKRI"
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    /><span class="project-item-icon-box"
+                      ><ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                      ></ion-icon
+                    ></span>
+                  </figure>
+                  <h3 class="project-title">NKRI</h3>
+                  <p class="project-category">Mobile · Proyek Magang</p>
+                </button>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-          </form>
+        <article class="credentials" id="kredensial" data-page="kredensial">
+          <header><h2 class="h2 article-title">Kredensial</h2></header>
 
-        </section>
+          <section class="credential-section">
+            <h3 class="h3 section-heading">Sertifikasi</h3>
+            <div class="credential-grid">
+              <div class="credential-card">
+                <span class="credential-kicker">BNSP melalui LSP PENS</span>
+                <h4 class="h4">Software Quality Control Tester</h4>
+                <p class="credential-period">Oktober 2025–Oktober 2028</p>
+                <p>
+                  Sertifikasi ini mencakup 11 unit kompetensi dalam perencanaan
+                  mutu, pengelolaan risiko, verifikasi proses, manual dan
+                  automated testing, security testing, serta penyusunan
+                  rekomendasi mutu perangkat lunak.
+                </p>
+              </div>
+              <div class="credential-card">
+                <span class="credential-kicker"
+                  >PENS Language and Culture Center</span
+                >
+                <h4 class="h4">PENS English Proficiency Test</h4>
+                <p class="credential-period">Mei 2026–Mei 2028</p>
+                <p>Skor PEPT 500.</p>
+              </div>
+            </div>
+          </section>
 
-      </article>
+          <section class="credential-section">
+            <h3 class="h3 section-heading">Pelatihan</h3>
+            <ul class="training-list">
+              <li>
+                <a
+                  href="https://www.dicoding.com/certificates/53XE101MKZRN"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong>Memulai Pemrograman dengan Dart</strong
+                  ><span>Dicoding · Februari 2026 · 30 jam</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.dicoding.com/certificates/NVP7WKELRZR0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong>Belajar Dasar Pemrograman Web</strong
+                  ><span>Dicoding · Agustus 2025 · 41 jam</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.dicoding.com/certificates/53XEDWDVVPRN"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong>Belajar Membuat Aplikasi Android untuk Pemula</strong
+                  ><span>Dicoding · Januari 2025 · 60 jam</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.dicoding.com/certificates/07Z64N7NYPQR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong>Memulai Pemrograman dengan Kotlin</strong
+                  ><span>Dicoding · Desember 2024 · 50 jam</span></a
+                >
+              </li>
+              <li>
+                <div>
+                  <strong>LKMM TD HIMIT PENS</strong><span>Januari 2022</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>LKMM Pra-TD PENS</strong><span>Oktober 2021</span>
+                </div>
+              </li>
+            </ul>
+          </section>
 
+          <section class="skill" aria-labelledby="skill-title">
+            <h3 class="h3 section-heading" id="skill-title">Keahlian</h3>
+            <div class="skill-groups">
+              <div class="skill-group">
+                <h4>Mobile</h4>
+                <ul class="tag-list">
+                  <li>Dart</li>
+                  <li>Flutter</li>
+                  <li>Riverpod</li>
+                  <li>BLoC</li>
+                  <li>GoRouter</li>
+                  <li>AutoRoute</li>
+                  <li>Material 3</li>
+                  <li>Google Maps</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>API & Real-Time</h4>
+                <ul class="tag-list">
+                  <li>REST API</li>
+                  <li>Dio</li>
+                  <li>WebSocket</li>
+                  <li>Socket.IO</li>
+                  <li>WebRTC</li>
+                  <li>Server-Sent Events</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>Arsitektur & Penyimpanan</h4>
+                <ul class="tag-list">
+                  <li>Clean Architecture</li>
+                  <li>Modular Monolith</li>
+                  <li>Isar</li>
+                  <li>Hive</li>
+                  <li>Flutter Secure Storage</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>Web & Back-End</h4>
+                <ul class="tag-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>JWT</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>Testing & Tools</h4>
+                <ul class="tag-list">
+                  <li>Manual Testing</li>
+                  <li>Katalon Studio</li>
+                  <li>Selenium WebDriver</li>
+                  <li>Git</li>
+                  <li>Android Studio</li>
+                  <li>VS Code</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>Bahasa Lain</h4>
+                <ul class="tag-list">
+                  <li>C</li>
+                  <li>Python</li>
+                  <li>PHP</li>
+                  <li>Java</li>
+                  <li>SQL</li>
+                  <li>Kotlin</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <article class="contact" id="kontak" data-page="kontak">
+          <header><h2 class="h2 article-title">Kontak</h2></header>
+
+          <section class="mapbox">
+            <iframe
+              src="https://www.google.com/maps?q=Surabaya%2C%20Indonesia&output=embed"
+              title="Peta umum Kota Surabaya, Indonesia"
+              width="800"
+              height="400"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+
+          <section class="contact-intro">
+            <h3 class="h3">Mari Terhubung</h3>
+            <p>
+              Saya terbuka untuk berdiskusi dan berkolaborasi dalam pengembangan
+              aplikasi mobile, web, back-end, maupun proyek perangkat lunak
+              lainnya.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:latifian.iman44@gmail.com"
+                ><ion-icon name="mail-outline" aria-hidden="true"></ion-icon
+                >Email</a
+              >
+              <a
+                href="https://www.linkedin.com/in/latifian-iman-48971421b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/latifiann"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><ion-icon name="logo-github" aria-hidden="true"></ion-icon
+                >GitHub</a
+              >
+            </div>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Kirim Pesan</h3>
+            <p class="form-note">
+              Pengiriman melalui form belum aktif. Untuk saat ini, silakan
+              hubungi saya melalui email atau LinkedIn.
+            </p>
+            <form class="form" data-form novalidate>
+              <div class="input-wrapper">
+                <div>
+                  <label for="fullname">Nama lengkap</label
+                  ><input
+                    id="fullname"
+                    type="text"
+                    name="fullname"
+                    class="form-input"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Alamat email</label
+                  ><input
+                    id="email"
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+              <label for="message">Pesan</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input"
+                required
+              ></textarea>
+              <button class="form-btn" type="submit">
+                <ion-icon
+                  name="paper-plane-outline"
+                  aria-hidden="true"
+                ></ion-icon
+                ><span>Kirim pesan</span>
+              </button>
+              <p
+                class="form-status"
+                role="status"
+                aria-live="polite"
+                data-form-status
+              ></p>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <div class="modal-container" data-project-modal hidden>
+      <div class="overlay" data-modal-overlay></div>
+      <section
+        class="project-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="project-modal-title"
+        tabindex="-1"
+        data-modal-dialog
+      >
+        <button
+          class="modal-close-btn"
+          type="button"
+          aria-label="Tutup detail proyek"
+          data-modal-close
+        >
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <p class="modal-kicker" data-modal-kicker></p>
+        <h2 class="h2" id="project-modal-title" data-modal-title></h2>
+        <p class="modal-summary" data-modal-summary></p>
+        <div class="modal-body" data-modal-body></div>
+        <div class="modal-links" data-modal-links></div>
+      </section>
     </div>
 
-  </main>
+    <template id="project-semina">
+      <div data-kicker>Back-End Developer · Agustus–September 2026</div>
+      <div data-title>Semina</div>
+      <div data-summary>
+        Semina menyediakan REST API untuk mengelola event, pemesanan, dan
+        checkout tiket, lengkap dengan CMS bagi pengelola acara.
+      </div>
+      <div data-body>
+        <h3>Kontribusi</h3>
+        <ul>
+          <li>
+            Membangun REST API untuk autentikasi peserta, pencarian event,
+            riwayat pesanan, checkout tiket, dan pengelolaan data melalui CMS.
+          </li>
+          <li>
+            Menerapkan autentikasi JWT terpisah, bcrypt, role-based
+            authorization, dan organizer-scoped access.
+          </li>
+          <li>
+            Merancang validasi checkout berbasis transaksi MongoDB serta
+            pengiriman email OTP dan konfirmasi checkout.
+          </li>
+          <li>Menambahkan upload gambar dan centralized error handling.</li>
+        </ul>
+        <h3>Teknologi</h3>
+        <p>
+          Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt, Nodemailer,
+          Mustache, Multer.
+        </p>
+        <p class="modal-note">
+          Semina dikembangkan lebih lanjut dari materi BuildWithAngga sebagai
+          proyek pembelajaran personal. Saat ini, proyek belum memiliki public
+          deployment, CI, dan automated test suite.
+        </p>
+      </div>
+      <a data-link href="https://github.com/latifiann/backend-semina"
+        >Lihat repository</a
+      >
+    </template>
+    <template id="project-remi-web">
+      <div data-kicker>Anggota Tim Proyek · Agustus–November 2024</div>
+      <div data-title>ReMi Web App</div>
+      <div data-summary>
+        ReMi Web App membantu mahasiswa mengatur task, deadline, dan pengingat
+        melalui tampilan web yang responsive.
+      </div>
+      <div data-body>
+        <h3>Kontribusi</h3>
+        <ul>
+          <li>
+            Berpartisipasi dalam pengembangan responsive web app bersama tim
+            menggunakan React, TypeScript, Vite, dan Tailwind CSS.
+          </li>
+          <li>
+            Mendukung pengembangan produk dengan lingkup autentikasi, task
+            management, pencarian dan filter deadline, serta reminder berbasis
+            API.
+          </li>
+          <li>
+            Berkolaborasi dalam proyek yang mencakup Eisenhower Matrix, profil,
+            gamifikasi misi dan koin, REST API integration dengan Bearer token,
+            serta event analytics.
+          </li>
+        </ul>
+        <h3>Teknologi</h3>
+        <p>React, TypeScript, Vite, Tailwind CSS, REST API, Bearer Token.</p>
+      </div>
+      <a data-link href="https://remi.agileteknik.com/">Kunjungi ReMi Web</a>
+    </template>
+    <template id="project-mooda">
+      <div data-kicker>Mobile Developer Intern · Juli–Desember 2025</div>
+      <div data-title>Mooda App</div>
+      <div data-summary>
+        Prototipe aplikasi ride-hailing untuk pemesanan perjalanan oleh
+        pelanggan dan pengemudi.
+      </div>
+      <div data-body>
+        <h3>Kontribusi</h3>
+        <ul>
+          <li>
+            Mengembangkan fitur autentikasi, pemesanan dan pembatalan
+            perjalanan, status perjalanan real-time, rating, profil, status
+            pengemudi, dan riwayat perjalanan.
+          </li>
+          <li>
+            Mengintegrasikan REST API melalui Dio, pembaruan real-time melalui
+            Socket.IO, serta Google Maps untuk geolokasi dan reverse geocoding.
+          </li>
+          <li>
+            Mengelola state dengan Riverpod, navigasi dengan GoRouter, dan sesi
+            lokal dengan Hive.
+          </li>
+          <li>
+            Merancang UI/UX melalui Figma dan melakukan manual testing pada
+            Android.
+          </li>
+        </ul>
+        <h3>Teknologi</h3>
+        <p>
+          Flutter, Dart, Riverpod, GoRouter, Dio, Socket.IO, Google Maps, Hive.
+        </p>
+        <p class="modal-note">
+          Dikembangkan dalam tim empat orang menggunakan metode hybrid
+          Agile–Waterfall.
+        </p>
+      </div>
+    </template>
+    <template id="project-nkri">
+      <div data-kicker>Mobile Developer Intern · Januari–Juni 2025</div>
+      <div data-title>NKRI</div>
+      <div data-summary>
+        Aplikasi komunikasi real-time untuk chat personal dan grup, panggilan
+        suara/video, serta berbagi file.
+      </div>
+      <div data-body>
+        <h3>Kontribusi</h3>
+        <ul>
+          <li>
+            Mengembangkan dan menyempurnakan modul komunikasi real-time berbasis
+            Flutter dalam tim Agile beranggotakan enam orang.
+          </li>
+          <li>
+            Berkontribusi pada migrasi Socket.IO ke WebSocket, message
+            dispatching, background service integration, reconnect handling, dan
+            user activity status.
+          </li>
+          <li>
+            Mengembangkan prototipe panggilan suara dan video personal berbasis
+            WebRTC.
+          </li>
+          <li>
+            Mengembangkan message search, filtering, pagination, attachment, dan
+            sejumlah alur pengelolaan grup.
+          </li>
+        </ul>
+        <h3>Teknologi</h3>
+        <p>Flutter, Riverpod, Isar, Dio, AutoRoute, WebSocket, WebRTC.</p>
+      </div>
+      <a data-link href="https://nkr.id/">Kunjungi situs NKRI</a>
+    </template>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
