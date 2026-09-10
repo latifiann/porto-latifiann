@@ -14,11 +14,11 @@ Buka `http://127.0.0.1:4173`.
 
 ## Struktur
 
-- `index.html`: konten, metadata, dan template detail proyek.
+- `index.html`: konten dan metadata halaman utama.
 - `projects/`: halaman case study untuk proyek dengan showcase lengkap.
 - `assets/css/style.css`: tampilan responsif dan aksesibilitas visual.
 - `assets/css/project-detail.css`: layout shared untuk halaman case study.
-- `assets/js/script.js`: navigasi hash, filter proyek, modal, sidebar, dan validasi form.
+- `assets/js/script.js`: navigasi hash, filter proyek, sidebar, dan validasi form.
 - `assets/images/`: ikon, gambar proyek, dan foto profil.
 
 ## Data
@@ -29,9 +29,13 @@ Konten awal disusun dari `../cv-latifian/cv-latifianiman-master.md`. Hanya bagia
 
 - FMS-CREATE tersedia pada `projects/fms-create.html`.
 - ReMi Mobile tersedia pada `projects/remi-mobile.html`.
-- Semina, ReMi Web App, Mooda App, dan NKRI masih memakai modal pada `index.html`.
-- Galeri FMS-CREATE dan ReMi Mobile memakai placeholder sampai screenshot tambahan tersedia.
-- Video promosi ReMi memakai placeholder yang dapat diganti dengan Google Drive preview atau YouTube embed.
+- Semina tersedia pada `projects/semina.html`.
+- ReMi Web App tersedia pada `projects/remi-web.html`.
+- Mooda App tersedia pada `projects/mooda.html`.
+- NKRI tersedia pada `projects/nkri.html`.
+- Showcase FMS-CREATE memakai satu gambar utama.
+- Showcase ReMi Mobile memuat video promosi YouTube dan gambar cover.
+- Showcase Semina, ReMi Web App, Mooda App, dan NKRI masing-masing memakai satu gambar utama.
 
 ## Status sementara
 
@@ -43,7 +47,7 @@ Konten awal disusun dari `../cv-latifian/cv-latifianiman-master.md`. Hanya bagia
 
 Cover proyek berada di `assets/images/projects/`. Pertahankan rasio sekitar `8:5` dan tambahkan teks alternatif yang menjelaskan isi gambar.
 
-Untuk mengisi showcase, ganti elemen `.showcase-placeholder` pada halaman proyek dengan `<figure>` dan `<img>` terkait. Untuk video ReMi, ganti `.video-placeholder` dengan `<iframe>` Google Drive/YouTube atau elemen `<video>` tanpa autoplay.
+Media showcase dapat diperbarui melalui elemen `<img>` atau `<iframe>` pada halaman proyek terkait. Video tidak memakai autoplay.
 
 ## Lisensi
 

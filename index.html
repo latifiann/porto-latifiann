@@ -393,7 +393,10 @@
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
-                <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
+                <ion-icon
+                  name="code-slash-outline"
+                  aria-hidden="true"
+                ></ion-icon>
               </div>
               <h3 class="h3">Pengalaman Proyek</h3>
             </div>
@@ -606,11 +609,7 @@
                 data-filter-item
                 data-category="back-end"
               >
-                <button
-                  class="project-card"
-                  type="button"
-                  data-project-open="semina"
-                >
+                <a class="project-card" href="./projects/semina.html">
                   <figure class="project-img" data-image-mode="full">
                     <img
                       src="./assets/images/projects/semina.webp"
@@ -620,25 +619,21 @@
                       loading="lazy"
                     /><span class="project-item-icon-box"
                       ><ion-icon
-                        name="eye-outline"
+                         name="arrow-forward-outline"
                         aria-hidden="true"
                       ></ion-icon
                     ></span>
                   </figure>
                   <h3 class="project-title">Semina</h3>
                   <p class="project-category">Back-End · Proyek Pembelajaran</p>
-                </button>
+                </a>
               </li>
               <li
                 class="project-item active"
                 data-filter-item
                 data-category="web"
               >
-                <button
-                  class="project-card"
-                  type="button"
-                  data-project-open="remi-web"
-                >
+                <a class="project-card" href="./projects/remi-web.html">
                   <figure class="project-img" data-image-mode="full">
                     <img
                       src="./assets/images/projects/remi-website.webp"
@@ -648,25 +643,21 @@
                       loading="lazy"
                     /><span class="project-item-icon-box"
                       ><ion-icon
-                        name="eye-outline"
+                         name="arrow-forward-outline"
                         aria-hidden="true"
                       ></ion-icon
                     ></span>
                   </figure>
                   <h3 class="project-title">ReMi Web App</h3>
                   <p class="project-category">Web · Proyek Tim</p>
-                </button>
+                </a>
               </li>
               <li
                 class="project-item active"
                 data-filter-item
                 data-category="mobile"
               >
-                <button
-                  class="project-card"
-                  type="button"
-                  data-project-open="mooda"
-                >
+                <a class="project-card" href="./projects/mooda.html">
                   <figure class="project-img" data-image-mode="transparent">
                     <img
                       src="./assets/images/projects/mooda.webp"
@@ -676,25 +667,21 @@
                       loading="lazy"
                     /><span class="project-item-icon-box"
                       ><ion-icon
-                        name="eye-outline"
+                         name="arrow-forward-outline"
                         aria-hidden="true"
                       ></ion-icon
                     ></span>
                   </figure>
                   <h3 class="project-title">Mooda App</h3>
                   <p class="project-category">Mobile · Proyek Magang</p>
-                </button>
+                </a>
               </li>
               <li
                 class="project-item active"
                 data-filter-item
                 data-category="mobile"
               >
-                <button
-                  class="project-card"
-                  type="button"
-                  data-project-open="nkri"
-                >
+                <a class="project-card" href="./projects/nkri.html">
                   <figure class="project-img" data-image-mode="transparent">
                     <img
                       src="./assets/images/projects/nkri.webp"
@@ -704,14 +691,14 @@
                       loading="lazy"
                     /><span class="project-item-icon-box"
                       ><ion-icon
-                        name="eye-outline"
+                         name="arrow-forward-outline"
                         aria-hidden="true"
                       ></ion-icon
                     ></span>
                   </figure>
                   <h3 class="project-title">NKRI</h3>
                   <p class="project-category">Mobile · Proyek Magang</p>
-                </button>
+                </a>
               </li>
             </ul>
           </section>
@@ -974,173 +961,6 @@
         </article>
       </div>
     </main>
-
-    <div class="modal-container" data-project-modal hidden>
-      <div class="overlay" data-modal-overlay></div>
-      <section
-        class="project-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="project-modal-title"
-        tabindex="-1"
-        data-modal-dialog
-      >
-        <button
-          class="modal-close-btn"
-          type="button"
-          aria-label="Tutup detail proyek"
-          data-modal-close
-        >
-          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-        </button>
-        <p class="modal-kicker" data-modal-kicker></p>
-        <h2 class="h2" id="project-modal-title" data-modal-title></h2>
-        <p class="modal-summary" data-modal-summary></p>
-        <div class="modal-body" data-modal-body></div>
-        <div class="modal-links" data-modal-links></div>
-      </section>
-    </div>
-
-    <template id="project-semina">
-      <div data-kicker>Back-End Developer · Agustus–September 2026</div>
-      <div data-title>Semina</div>
-      <div data-summary>
-        Semina menyediakan REST API untuk mengelola event, pemesanan, dan
-        checkout tiket, lengkap dengan CMS bagi pengelola acara.
-      </div>
-      <div data-body>
-        <h3>Kontribusi</h3>
-        <ul>
-          <li>
-            Membangun REST API untuk autentikasi peserta, pencarian event,
-            riwayat pesanan, checkout tiket, dan pengelolaan data melalui CMS.
-          </li>
-          <li>
-            Menerapkan autentikasi JWT terpisah, bcrypt, role-based
-            authorization, dan organizer-scoped access.
-          </li>
-          <li>
-            Merancang validasi checkout berbasis transaksi MongoDB serta
-            pengiriman email OTP dan konfirmasi checkout.
-          </li>
-          <li>Menambahkan upload gambar dan centralized error handling.</li>
-        </ul>
-        <h3>Teknologi</h3>
-        <p>
-          Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt, Nodemailer,
-          Mustache, Multer.
-        </p>
-        <p class="modal-note">
-          Semina dikembangkan lebih lanjut dari materi BuildWithAngga sebagai
-          proyek pembelajaran personal. Saat ini, proyek belum memiliki public
-          deployment, CI, dan automated test suite.
-        </p>
-      </div>
-      <a data-link href="https://github.com/latifiann/backend-semina"
-        >Lihat repository</a
-      >
-    </template>
-    <template id="project-remi-web">
-      <div data-kicker>Anggota Tim Proyek · Agustus–November 2024</div>
-      <div data-title>ReMi Web App</div>
-      <div data-summary>
-        ReMi Web App membantu mahasiswa mengatur task, deadline, dan pengingat
-        melalui tampilan web yang responsive.
-      </div>
-      <div data-body>
-        <h3>Kontribusi</h3>
-        <ul>
-          <li>
-            Berpartisipasi dalam pengembangan responsive web app bersama tim
-            menggunakan React, TypeScript, Vite, dan Tailwind CSS.
-          </li>
-          <li>
-            Mendukung pengembangan produk dengan lingkup autentikasi, task
-            management, pencarian dan filter deadline, serta reminder berbasis
-            API.
-          </li>
-          <li>
-            Berkolaborasi dalam proyek yang mencakup Eisenhower Matrix, profil,
-            gamifikasi misi dan koin, REST API integration dengan Bearer token,
-            serta event analytics.
-          </li>
-        </ul>
-        <h3>Teknologi</h3>
-        <p>React, TypeScript, Vite, Tailwind CSS, REST API, Bearer Token.</p>
-      </div>
-      <a data-link href="https://remi.agileteknik.com/">Kunjungi ReMi Web</a>
-    </template>
-    <template id="project-mooda">
-      <div data-kicker>Mobile Developer Intern · Juli–Desember 2025</div>
-      <div data-title>Mooda App</div>
-      <div data-summary>
-        Prototipe aplikasi ride-hailing untuk pemesanan perjalanan oleh
-        pelanggan dan pengemudi.
-      </div>
-      <div data-body>
-        <h3>Kontribusi</h3>
-        <ul>
-          <li>
-            Mengembangkan fitur autentikasi, pemesanan dan pembatalan
-            perjalanan, status perjalanan real-time, rating, profil, status
-            pengemudi, dan riwayat perjalanan.
-          </li>
-          <li>
-            Mengintegrasikan REST API melalui Dio, pembaruan real-time melalui
-            Socket.IO, serta Google Maps untuk geolokasi dan reverse geocoding.
-          </li>
-          <li>
-            Mengelola state dengan Riverpod, navigasi dengan GoRouter, dan sesi
-            lokal dengan Hive.
-          </li>
-          <li>
-            Merancang UI/UX melalui Figma dan melakukan manual testing pada
-            Android.
-          </li>
-        </ul>
-        <h3>Teknologi</h3>
-        <p>
-          Flutter, Dart, Riverpod, GoRouter, Dio, Socket.IO, Google Maps, Hive.
-        </p>
-        <p class="modal-note">
-          Dikembangkan dalam tim empat orang menggunakan metode hybrid
-          Agile–Waterfall.
-        </p>
-      </div>
-    </template>
-    <template id="project-nkri">
-      <div data-kicker>Mobile Developer Intern · Januari–Juni 2025</div>
-      <div data-title>NKRI</div>
-      <div data-summary>
-        Aplikasi komunikasi real-time untuk chat personal dan grup, panggilan
-        suara/video, serta berbagi file.
-      </div>
-      <div data-body>
-        <h3>Kontribusi</h3>
-        <ul>
-          <li>
-            Mengembangkan dan menyempurnakan modul komunikasi real-time berbasis
-            Flutter dalam tim Agile beranggotakan enam orang.
-          </li>
-          <li>
-            Berkontribusi pada migrasi Socket.IO ke WebSocket, message
-            dispatching, background service integration, reconnect handling, dan
-            user activity status.
-          </li>
-          <li>
-            Mengembangkan prototipe panggilan suara dan video personal berbasis
-            WebRTC.
-          </li>
-          <li>
-            Mengembangkan message search, filtering, pagination, attachment, dan
-            sejumlah alur pengelolaan grup.
-          </li>
-        </ul>
-        <h3>Teknologi</h3>
-        <p>Flutter, Riverpod, Isar, Dio, AutoRoute, WebSocket, WebRTC.</p>
-      </div>
-      <a data-link href="https://nkr.id/">Kunjungi situs NKRI</a>
-    </template>
 
     <script src="./assets/js/script.js"></script>
     <script
